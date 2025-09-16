@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwani (Ash) - Resume & Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #24292e 0%, #0077b5 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: #24292e;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-item h3, .project-item h3 {
+            color: #24292e;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .meta, .project-item .meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .experience-item ul, .project-item ul {
+            margin-left: 1.5rem;
+        }
+
+        .experience-item li, .project-item li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #1a1e22;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(36, 41, 46, 0.3);
+        }
+
+        .tech-tag {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: #e9ecef;
+            color: #495057;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .github-contact {
+            background: #24292e;
+        }
+
+        .github-contact:hover {
+            background: #1a1e22;
+            transform: translateY(-2px);
+        }
+
+        .linkedin-contact {
+            background: #0077b5;
+        }
+
+        .linkedin-contact:hover {
+            background: #005885;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                border-radius: 15px;
+            }
+            
+            .header, .content {
+                padding: 2rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ashwani (Ash)</h1>
+            <p>Data Scientist & Software Engineer</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Experience</h2>
+                
+                <div class="experience-item">
+                    <h3>Intern - NSPARC, Hub, Starkville, MS</h3>
+                    <div class="meta">September 2025 – Present</div>
+                    <ul>
+                        <li>Collaborating with Dr. Asad to develop and implement innovative, data-driven solutions for local businesses.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Undergraduate Researcher - Mississippi State University</h3>
+                    <div class="meta">August 2023 – August 2025</div>
+                    <ul>
+                        <li>Created a <a href="https://github.com/Ashwani564/RT-Monodepth-Construction" target="_blank">monocular depth estimation</a> system using YOLOV11, <a href="https://github.com/Ashwani564/ml-depth-pro-flask" target="_blank">Depth-pro</a>, and RT MonoDepth to accurately calculate the depth of construction objects, achieving real-time performance.</li>
+                        <li>Annotated and trained an object detection model on 9,000+ open cattle feed lots in NAIP using YOLOV11, achieving 94% classification accuracy.</li>
+                        <li>Developed a data pipeline using Apache Kafka to boost an unsupervised learning model, achieving an F1 score of 0.91.</li>
+                        <li>Containerized OAI gNb and UE core files using Docker and Kubernetes to streamline deployment processes.</li>
+                        <li>Programmed 20+ OpenAI cellular Non-Real-Time RIC files using C++ for dynamic radio resource allocation.</li>
+                        <li>Automated beamforming and power control of Sivers mmWave towers using GNU Radio and Bash scripting, achieving seamless automation for network testing.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Summer Research Intern - Purdue University, Hammond, IN</h3>
+                    <div class="meta">June 2024 – August 2024</div>
+                    <ul>
+                        <li>Developed a linear regression model using the scikit-learn library, achieving 94% prediction accuracy in crop yield rate forecasting.</li>
+                        <li>Engineered a logistic regression model with scikit-learn for a multi-class problem, attaining 96% classification accuracy in dry bean classification.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                
+                <div class="project-item">
+                    <h3>Library Mobile Application</h3>
+                    <div class="meta">
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Flutter</span>
+                    </div>
+                    <ul>
+                        <li>Engineered a personal e-reader application with Flutter, enabling users to upload ePub files and customize their reading experience with an OLED-black theme and the exclusive Bookerly font.</li>
+                    </ul>
+                    <a href="https://github.com/Ashwani564/My-Library" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Rocket Landing System</h3>
+                    <div class="meta">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <ul>
+                        <li>Engineered a physics-based simulation using NumPy and Matplotlib to model and visualize the landing trajectory of a reusable space rocket in a real-world environment.</li>
+                    </ul>
+                    <a href="https://github.com/Ashwani564/rocket_landing_system" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>YouTube Shorts Tracker Extension</h3>
+                    <div class="meta">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">YAML</span>
+                    </div>
+                    <ul>
+                        <li>Developing a novel browser extension to track YouTube Shorts watch time by parsing duration and count data from YouTube history via the YouTube Data API.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>Gravity Simulation</h3>
+                    <div class="meta">
+                        <span class="tech-tag">C++</span>
+                    </div>
+                    <ul>
+                        <li>Developed a three-body gravity simulation using OpenGL and GLFW libraries to visualize the real-time gravitational effects between celestial objects.</li>
+                    </ul>
+                    <a href="https://github.com/Ashwani564/gravity_simulation" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Library Management System</h3>
+                    <div class="meta">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <ul>
+                        <li>Designed and implemented a full-scale library management system using Python for logic and a PostgreSQL database for persistent data storage and retrieval.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://github.com/Ashwani564" target="_blank" class="contact-link github-contact">
+                    📦 GitHub Profile
+                </a>
+                <a href="https://www.linkedin.com/in/ashwani-m1/" target="_blank" class="contact-link linkedin-contact">
+                    💼 LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
