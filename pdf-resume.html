@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwani (Ash) Mishra - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 0.75in;
+            min-height: 11in;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5in;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.2in;
+        }
+
+        .qr-section {
+            width: 0.7in;
+            margin-right: 0.3in;
+            flex-shrink: 0;
+        }
+
+        .qr-placeholder {
+            width: 0.7in;
+            height: 0.7in;
+            background: #e9ecef;
+            border: 2px dashed #6c757d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        .contact-info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.1in;
+        }
+
+        .contact-details {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .contact-details a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 0.3in;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+            margin-bottom: 0.15in;
+        }
+
+        .job, .education-item, .project {
+            margin-bottom: 0.2in;
+        }
+
+        .job-header, .education-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.05in;
+        }
+
+        .job-title, .education-title, .project-title {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .job-date, .education-date, .project-tech {
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .job-subtitle, .education-subtitle {
+            font-style: italic;
+            margin-bottom: 0.05in;
+        }
+
+        .job ul, .project ul {
+            margin-left: 0.2in;
+            margin-top: 0.05in;
+        }
+
+        .job li, .project li {
+            margin-bottom: 0.05in;
+            font-size: 0.95rem;
+        }
+
+        .skills-list {
+            margin-left: 0.2in;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.08in;
+            font-size: 0.95rem;
+        }
+
+        .skills-category {
+            font-weight: bold;
+        }
+
+        .project-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #667eea;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .resume-container {
+                padding: 0.5in;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .qr-section {
+                margin: 0 auto 0.2in auto;
+            }
+            
+            .job-header, .education-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .name {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0.5in;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Links</a>
+    
+    <div class="resume-container">
+        <div class="header">
+            <div class="qr-section">
+                <div class="qr-placeholder">QR Code</div>
+            </div>
+            <div class="contact-info">
+                <div class="name">Ashwani (Ash) Mishra</div>
+                <div class="contact-details">
+                    773-998-6828 |
+                    <a href="mailto:am5082@msstate.edu">am5082@msstate.edu</a> |
+                    Starkville, MS<br>
+                    <a href="https://github.com/Ashwani564" target="_blank">github.com/Ashwani564</a> |
+                    <a href="https://www.linkedin.com/in/ashwani-m1" target="_blank">linkedin.com/in/ashwani-m1</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="education-title">Mississippi State University, Starkville, MS</div>
+                    <div class="education-date">May 2027</div>
+                </div>
+                <div class="education-subtitle">B.S. in Computer Science, Shackouls Honors College</div>
+                <div>Minor in Statistics</div>
+                <div>GPA: 4.0/4.0</div>
+                <div><strong>Relevant Coursework:</strong> Algorithms (CSE 4833), Computer Organization (CSE 3724), Systems Programming (CSE 3183), Statistical Inference (ST 3123)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <ul class="skills-list">
+                <li><span class="skills-category">Languages:</span> Python (Advanced), C++ (Intermediate), JavaScript (Intermediate), SQL (Basic), Dart (Beginner)</li>
+                <li><span class="skills-category">Frameworks/Libraries:</span> scikit-learn, NumPy, Matplotlib, OpenGL, GLFW, Docker, Kubernetes, Apache Kafka, Flutter</li>
+                <li><span class="skills-category">Developer Tools:</span> Git, GNU Radio, VS Code, Linux/Unix</li>
+                <li><span class="skills-category">Databases:</span> PostgreSQL</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">NSPARC, Hub, Starkville, MS</div>
+                    <div class="job-date">September 2025 – Present</div>
+                </div>
+                <div class="job-subtitle">Intern</div>
+                <ul>
+                    <li>Collaborating with Dr. Asad to develop and implement innovative, data-driven solutions for local businesses.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Mississippi State University, Starkville, MS</div>
+                    <div class="job-date">August 2023 – August 2025</div>
+                </div>
+                <div class="job-subtitle">Undergraduate Researcher</div>
+                <ul>
+                    <li>Created a <a href="https://github.com/Ashwani564/RT-Monodepth-Construction" target="_blank" class="project-link">monocular depth estimation</a> system using YOLOV11, <a href="https://github.com/Ashwani564/ml-depth-pro-flask" target="_blank" class="project-link">Depth-pro</a>, and RT MonoDepth to accurately calculate the depth of construction objects, achieving real-time performance.</li>
+                    <li>Annotated and trained an object detection model on 9,000+ open cattle feed lots in NAIP using YOLOV11, achieving 94% classification accuracy.</li>
+                    <li>Developed a data pipeline using Apache Kafka to boost an unsupervised learning model, achieving an F1 score of 0.91.</li>
+                    <li>Containerized OAI gNb and UE core files using Docker and Kubernetes to streamline deployment processes.</li>
+                    <li>Programmed 20+ OpenAI cellular Non-Real-Time RIC files using C++ for dynamic radio resource allocation.</li>
+                    <li>Automated beamforming and power control of Sivers mmWave towers using GNU Radio and Bash scripting, achieving seamless automation for network testing.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Purdue University, Hammond, IN</div>
+                    <div class="job-date">June 2024 – August 2024</div>
+                </div>
+                <div class="job-subtitle">Summer Research Intern</div>
+                <ul>
+                    <li>Developed a linear regression model using the scikit-learn library, achieving 94% prediction accuracy in crop yield rate forecasting.</li>
+                    <li>Engineered a logistic regression model with scikit-learn for a multi-class problem, attaining 96% classification accuracy in dry bean classification.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Projects</div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title"><a href="https://github.com/Ashwani564/My-Library" target="_blank" class="project-link">Library Mobile Application</a></div>
+                    <div class="project-tech">Dart, Flutter</div>
+                </div>
+                <ul>
+                    <li>Engineered a personal e-reader application with Flutter, enabling users to upload ePub files and customize their reading experience with an OLED-black theme and the exclusive Bookerly font.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title"><a href="https://github.com/Ashwani564/rocket_landing_system" target="_blank" class="project-link">Rocket Landing System</a></div>
+                    <div class="project-tech">Python, NumPy, Matplotlib</div>
+                </div>
+                <ul>
+                    <li>Engineered a physics-based simulation using NumPy and Matplotlib to model and visualize the landing trajectory of a reusable space rocket in a real-world environment.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">YouTube Shorts Tracker Extension</div>
+                    <div class="project-tech">JavaScript, YAML</div>
+                </div>
+                <ul>
+                    <li>Developing a novel browser extension to track YouTube Shorts watch time by parsing duration and count data from YouTube history via the YouTube Data API.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title"><a href="https://github.com/Ashwani564/gravity_simulation" target="_blank" class="project-link">Gravity Simulation</a></div>
+                    <div class="project-tech">C++</div>
+                </div>
+                <ul>
+                    <li>Developed a three-body gravity simulation using OpenGL and GLFW libraries to visualize the real-time gravitational effects between celestial objects.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Library Management System</div>
+                    <div class="project-tech">Python, PostgreSQL</div>
+                </div>
+                <ul>
+                    <li>Designed and implemented a full-scale library management system using Python for logic and a PostgreSQL database for persistent data storage and retrieval.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
