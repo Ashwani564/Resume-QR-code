@@ -89,6 +89,17 @@
             box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
         }
 
+        .latex-link {
+            background: #dc3545;
+            color: white;
+        }
+
+        .latex-link:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220, 53, 69, 0.3);
+        }
+
         .link-button::before {
             content: '';
             position: absolute;
@@ -141,6 +152,10 @@
             <a href="resume.html" target="_blank" rel="noopener noreferrer" class="link-button resume-link">
                 <span class="icon">📄</span>
                 Resume & Projects
+            </a>
+            <a href="resume.tex" target="_blank" rel="noopener noreferrer" class="link-button latex-link">
+                <span class="icon">📋</span>
+                LaTeX Resume
             </a>
         </div>
     </div>
